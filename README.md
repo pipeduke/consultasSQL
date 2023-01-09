@@ -32,7 +32,7 @@ WHERE fechaoperacion >= (now() - '90 day'::INTERVAL)
 GROUP BY DATE_TRUNC('day',fechaoperacion);
 ```
 
-_**4. Máximo diario del precio de bolsa de los últimos tres meses.**_
+_**4. Está repetido, debe ser "Minimo" diario del precio de bolsa de los últimos tres meses.**_
 ```
 SELECT DATE_TRUNC('day',fechaoperacion) AS Dia,  MIN(vctb) AS min_dia
 FROM public.afac
