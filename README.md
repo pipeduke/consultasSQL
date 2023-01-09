@@ -1,0 +1,2 @@
+# consultasSQL
+Prueba técnica SQL
